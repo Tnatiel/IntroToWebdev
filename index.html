@@ -8,47 +8,81 @@
     <link rel="stylesheet" href="new-style.css">
     <link rel="icon" href="images/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display&family=Secular+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="site">
         <header class="main-header">
-            <table>
+            <table class="logo-tr">
                 <tr>
-                    <td class="logo-td">
-                        <a href="/">
+                    <a href="/">
+                    <td>
                         <img class="logo" src="images/logo.png" alt="logo">
-                        <h1 id="main-heading">Ezil l'eel</h1>  \
-                        </a>
                     </td>
+                        <td>
+                        <h1 id="main-heading">Ezil E'leel</h1>  
+                    </td>
+                </a>
                 </tr>
             </table>
             
-            <img class="user" src="images/icons8-male-user-64.png" alt="user-profile">
+            <img class="user" src="images/icons8-male-user-36.png" alt="user-profile">
             
         </header>
+        
+        
+         
         <nav>
-            <h3>navigation</h3>
-            <button><p>aaaa</p></button> <br>
-            <button><p>aaaa</p></button> <br>
-            <button><p>aaaa</p></button> <br>
-            <button><p>aaaa</p></button> <br>
-            <button><p>aaaa</p></button> <br>
-            <button><p>aaaa</p></button> <br>
+            <ul class="nav-list">
+                <li>Navigation</li>
+                <li class="dark-nav"><a href="#fav-show">Favorite Show</a></li>
+                <li><a href="#fav-place">A Place I Enjoyed</a></li>
+                <li class="dark-nav"><a href="#fav-food">Feedback Form</a></li>
+                <li><a href="#fav-food">My Schools</a></li>
+                <li class="dark-nav"><a href="#fav-food">This Project on GitHub</a></li>
+                
+            </ul>
 
         </nav>
         <main class="main">
-            <p>
-                <h2>What is Lorem Ipsum? <br>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </h2>
-                <!-- <h2>Why do we use it?</h2>
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). -->
-                </p>
+
+            <section class="head-sec">
+                <h1>Hello!</h1>
+                <h2>Welcome to my website.</h2>
+                <h3>My name is Natiel Traore I'm a student on the Webdev bootcamp</h3>
+                <h3>These are my three favorite emojis:</h3>
+                <h1>🤣  🤯  🔥</h1>
+            </section>
+
+            <section id="fav-show" class="show-sec">
+                <article class="naturo-art">
+                    <h1>My Favorite Show</h1>
+                    <h2 style="font-style: italic;">Naruto</h2>
+                    <p>Naruto Uzumaki, a mischievous adolescent ninja, 
+                        struggles as he searches for recognition and dreams of becoming the Hokage,
+                        the village's leader and strongest ninja.</p>
+                    
+                        <h4>Why i liked naruto</h4>
+                        <p>Because it's combine action, comedy, friendship, betrayal.
+                             There are many life lessons in this show,
+                             Also anime food looks delicious </p>
+                        <h4>Quote</h4>
+                        <p>“Justice comes from vengeance but that justice only breeds more vengeance”. Nagato Uzumaki</p>
+                </article>
+
+                <aside class="naruto-aside">
+                    <img id="naruto-img" class="shadowed-img" src="images/naruto-img.jpg" alt="naruto-img"> <br>
+                    <a target="_blank" href="https://www.imdb.com/title/tt0988824/"><img src="images/imdb-logo.png" alt="imdb-logo"></a>
+                </aside>
+                
+
+            </section>
+            
+            
         </main>
         <footer>
-            <p>© 2022 Natiel Traore
+            <p>&nbsp;&ensp;© 2022 Natiel Traore 
                 <br>
             <a href="mailto:name@email.com">natiel.traore1@gmail.com</a>
             </p>
