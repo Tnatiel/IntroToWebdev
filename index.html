@@ -14,18 +14,14 @@
 <body>
     <div class="site">
         <header class="main-header">
-            <table class="logo-tr">
+            <a href="/index.html">
+            <table class="logo-table">
                 <tr>
-                    <a href="/">
-                    <td>
-                        <img class="logo" src="images/logo.png" alt="logo">
-                    </td>
-                        <td>
-                        <h1 id="main-heading">Ezil E'leel</h1>  
-                    </td>
-                </a>
+                    <td><img class="logo" src="images/logo.png" alt="logo"></td>
+                    <td><h1 id="main-heading">Ezil E'leel</h1></td>
                 </tr>
             </table>
+        </a>
             
             <img class="user" src="images/icons8-male-user-36.png" alt="user-profile">
             
@@ -38,9 +34,9 @@
                 <li>Navigation</li>
                 <li class="dark-nav"><a href="#fav-show">Favorite Show</a></li>
                 <li><a href="#fav-place">A Place I Enjoyed</a></li>
-                <li class="dark-nav"><a href="#fav-food">Feedback Form</a></li>
-                <li><a href="#fav-food">My Schools</a></li>
-                <li class="dark-nav"><a href="#fav-food">This Project on GitHub</a></li>
+                <li class="dark-nav"><a href="#fb-form">Feedback Form</a></li>
+                <li><a href="/schools.html" target="_blank">My Schools</a></li>
+                <li class="dark-nav"><a target="_blank" href="https://github.com/Tnatiel/IntroToWebdev/tree/assignment-2">This Project on GitHub</a></li>
                 
             </ul>
 
@@ -58,7 +54,7 @@
             <section id="fav-show" class="show-sec">
                 <article class="naturo-art">
                     <h1>My Favorite Show</h1>
-                    <h2 style="font-style: italic;">Naruto</h2>
+                    <h2>Naruto</h2>
                     <p>Naruto Uzumaki, a mischievous adolescent ninja, 
                         struggles as he searches for recognition and dreams of becoming the Hokage,
                         the village's leader and strongest ninja.</p>
@@ -73,12 +69,85 @@
 
                 <aside class="naruto-aside">
                     <img id="naruto-img" class="shadowed-img" src="images/naruto-img.jpg" alt="naruto-img"> <br>
-                    <a target="_blank" href="https://www.imdb.com/title/tt0988824/"><img src="images/imdb-logo.png" alt="imdb-logo"></a>
+                    <a target="_blank" href="https://www.imdb.com/title/tt0988824/"><button class="btn">see on IMDb</button></a>
                 </aside>
                 
+            </section>
 
+            <section id="fav-place" class="place-sec">
+                <article class="place-art">
+
+                    <div class="place-desc">
+                        <h1>A place I Enjoyed visiting</h1>
+                        <h2 class="sec-h2">Cape Greco, Cyprus</h2>
+                        <p>Cape Greco is cape and also a small peninsula in the southeast of Cyprus, in Famagusta, between Ayia Napa and Paralimni.
+                             According to the findings of the excavations that took place in 1992, this site is considered to be one of the most ancient settlements on the island
+                        </p>
+                        
+                        <p>
+                            In the sea area of Cape Greco there are submarine ravines and caves that are popular for diving. 
+                            Within sea ravines up to 10 meters high, there are sea caves, which are called "palaces".
+                             These caves, along with Smugglers caves, are accessible only by the sea.
+                        </p>
+                    </div>
+                    
+
+                    <div class="why-i-like">
+                        <h2>Why I like this place</h2>
+                        <p>Because of the clear water, the cliffs around and the beautiful sights</p>
+                    </div>
+                </article>
+
+                <aside class="place-aside">
+                    <img class="p-sm-img" src="/images/cape-greco-imgs/boat.jpg" alt="boat-img">                
+                    <img class="p-sm-img" src="/images/cape-greco-imgs/bridge.jpg" alt="bridge-img">                   
+                    <img class="p-sm-img" src="/images/cape-greco-imgs/cave.jpg" alt="cave-img">                   
+                    <img class="p-sm-img" src="/images/cape-greco-imgs/hole.jpg" alt="hole-img">
+                    <img class="p-sm-img" src="/images/cape-greco-imgs/sm cliff.jpg" alt="sm-cliff-img">
+                    <img class="p-sm-img" src="/images/cape-greco-imgs/sunrise.jpg" alt="sunrise-img">
+                    <img class="p-sm-img" src="/images/cape-greco-imgs/tree.jpg" alt="tree-img">
+                    
+                    
+                </aside>
+            
             </section>
             
+            <section id="fb-form" class="form-sec">
+                <h1>Feedback Form</h1>
+                <h2 class="sec-h2">i'd love to hear your honest thoughts!</h2>
+                <form action="/" method="get">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Personal Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="name">Full name:</label>
+                                    <input  class="txt-input" type="text" name="name" id="name" required >
+                                </td>
+
+                                <td>
+                                    <label for="phone">Phone number:</label>
+                                    <input type="tel" name="phone-number" id="phone" required >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email" id="email">
+                                </td>
+                                <td>
+                                    <label for="date">Date of birth:</label>
+                                    <input type="date" max="2050-01-01" min="1950-01-01">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </section>
             
         </main>
         <footer>
