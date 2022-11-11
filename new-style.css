@@ -31,19 +31,11 @@ footer {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 7vh;
 }
 
 h2 {
-    font-size: 30px;
-}
-input {
-    border: solid 2px;
-    border-color: black;
-    border-radius: 10px;
-    height: 30px;
-    /* margin: 0 25px; */
-    min-width: 80%;
+    font-size: 4vh;
 }
 
 nav {
@@ -57,19 +49,11 @@ ul {
     list-style: none;
 }
 
-td {
-    display: inline-block;
-    
-}
-th {
-    text-align: left;
-}
-
 
 section {
     height: 75vh;
     line-height: 2;
-    margin: 30px 15px 5px 30px;
+    margin: 6vh 1vw 1vh 2.5vw;
 }
 
 /**********************CLASS SELECTORS***********************/
@@ -107,7 +91,7 @@ section {
 .logo {
     justify-self: flex-start;
     align-self: center;
-    height: 46px;
+    height: 8vh;
     
 }
 
@@ -120,12 +104,12 @@ section {
     max-width: fit-content;
     justify-content: flex-start;
     grid-column: 1/2;
-    margin-left: 8px;
+    margin-left: 1vw;
     
 }
 
 .logo-table:hover {
-    background-color: rgb(130, 233, 173);
+    background-color: rgb(130, 233, 173, 0.5);
     
 }
 
@@ -187,7 +171,7 @@ section {
 .place-aside {
     border: solid 4px;
     border-color: rgba(185, 218, 100, 0.862);
-    margin-top: 30px;
+    margin-top: 6vh;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
@@ -195,7 +179,7 @@ section {
 
 
 .p-sm-img {
-    margin: 1px 0;
+    margin: 0.1vh 0;
     
 
 }
@@ -220,8 +204,8 @@ section {
     align-self: center;
     justify-self: end;
     grid-column: -1/-2;
-    height: 46px;
-    margin-right: 10px;
+    height: 6vh;
+    margin-right: 1vw;
 }
 
 /* 
@@ -231,19 +215,13 @@ Four spaces gap: &emsp; */
 
 /**********************ID SELECTORS***********************/
 
+
 #main-heading {
     display: inline;
     font-family: 'Secular One', sans-serif;
     align-self: stretch;
-    font-size: 32px;
+    font-size: 4vh;
     
-}
-
-#test {
-    padding: 500px;
-    background-color: red;
-    grid-row: 1/2;
-    grid-column: 1/2;
 }
 
 /********************** SECTIONS ****************************/
@@ -255,9 +233,8 @@ Four spaces gap: &emsp; */
 .show-sec {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    /* grid-template-rows: 1fr; */
     grid-column: 1/2;
-    margin: 30px 15px 5px 30px;
+    
 }
 
 .place-sec {
@@ -266,19 +243,114 @@ Four spaces gap: &emsp; */
     
 }
 
-.form-sec {
+
+/**********************FORM SECTIONS ****************************/
+
+div.feedback {
+    margin: 2vh 0;
+}
+
+div.rate-btns p { 
+    display: inline;
+    
+    font-size: 1.2vw;
+}
+
+.feedback {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.form-item-date input {
+    width: 11vw;
+}
+
+input {
+    border: solid 2px;
+    border-color: rgba(0, 0, 0, 0.329);
+    border-radius: 10px;
+    height: 3.5vh;
+}
+
+.msg {
+    grid-column: -1/-2;
+}
+
+.name-email {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+}
+
+.p-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.phone-date {
     display: flex;
     flex-direction: column;
 }
+
+
+.values {
+    display: flex;
+    gap: 1vw;
+}
+
+.rate {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-row: 2;
+    width: 30vw;
+}
+
+.rate-btns {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.rd-input {
+    width: 1vw;
+}
+
+select {
+    width: 18.2vw;
+    border: solid 2px;
+    border-color: rgba(0, 0, 0, 0.329);
+    border-radius: 1.5vh;
+    height: 3.5vh;
+    
+}
+.source {
+}
+
+div.rate label {
+    grid-column: 1/2;
+}
+
+
+
+
 
 /**********************CONTAINED TAGS SELECTORS***********************/
 
 nav > ul > li {
     padding: 10px;
-    font-size: 18px;
+    font-size: 2.6vh;
+    font-weight: 700;
 }
 
-
-thead> th {
-    margin-left: 10px;
+.name-email input {
+    width: 20vw;
+    text-indent: 1vw;
 }
+

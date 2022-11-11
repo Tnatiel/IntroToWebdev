@@ -113,40 +113,77 @@
             </section>
             
             <section id="fb-form" class="form-sec">
-                <h1>Feedback Form</h1>
-                <h2 class="sec-h2">i'd love to hear your honest thoughts!</h2>
                 <form action="/" method="get">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th colspan="2">Personal Details</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <label for="name">Full name:</label>
-                                    <input  class="txt-input" type="text" name="name" id="name" required >
-                                </td>
+                <div class="header">
+                    <h1>Feedback Form</h1>
+                    <h2 class="sec-h2">i'd love to hear your honest thoughts!</h2>
+                </div>
 
-                                <td>
-                                    <label for="phone">Phone number:</label>
-                                    <input type="tel" name="phone-number" id="phone" required >
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="email">Email:</label>
-                                    <input type="email" name="email" id="email">
-                                </td>
-                                <td>
-                                    <label for="date">Date of birth:</label>
-                                    <input type="date" max="2050-01-01" min="1950-01-01">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </form>
+                <div class="p-details">
+                    <h4>Personal details</h4>
+                    <div class="name-email">
+                        <div class="form-item">
+                            <label for="name">Full name:</label>
+                            <input  class="txt-input" type="text" name="name" id="name" required >
+                        </div>
+                        <div class="form-item">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email">
+                        </div>       
+                        <div class="form-item">
+                            <label for="phone">Phone number:</label>
+                            <input type="tel" name="phone-number" id="phone" required >
+                        </div>
+                        <div class="form-item form-item-date">
+                            <label for="date">Date of birth:</label>
+                            <input type="date" max="2050-01-01" min="1950-01-01">
+                    </div>
+                </div>
+
+                <div class="feedback">
+                    <div class="rate-src">  
+                        <h4>Your feedback</h4>
+                        <div class="rate">
+                            <label for="rate">Rating:</label>
+                            <div class="rate-btns">
+                                
+                                <input class="rd-input" type="radio" id="1" name="1">
+                                <input class="rd-input" type="radio" id="2" name="2">
+                                <input class="rd-input" type="radio" id="3" name="3">
+                                <input class="rd-input" type="radio" id="4" name="4">
+                                <input class="rd-input" type="radio" id="5" name="5">
+                            
+                                <p>1</p>
+                                <p>2</p>
+                                <p>3</p>
+                                <p>4</p>
+                                <p>5</p>
+                                
+                            </div>
+                        </div>
+                        <div class="source">
+                            <label for="source">How did you find this website?</label> <br>
+                            <select name="source" id="source">
+                                
+                                <option value="">GitHub</option>
+                                <option value="">Linkedin</option>
+                                <option value="">Webdev</option>
+                                <option value="">Google</option>
+                                <option value="">Other</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <label for="msg">Your message</label>
+                        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </div>
+                
+                
+                
+            </form>
             </section>
             
         </main>
