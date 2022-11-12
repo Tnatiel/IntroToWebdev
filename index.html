@@ -13,6 +13,9 @@
 </head>
 <body>
     <div class="site">
+
+        <!-- SITE HEADER -->
+
         <header class="main-header">
             <a href="/index.html">
             <table class="logo-table">
@@ -26,22 +29,27 @@
             <img class="user" src="images/icons8-male-user-36.png" alt="user-profile">
             
         </header>
-        
-        
          
+        <!-- NAV-BAR -->
+
         <nav>
             <ul class="nav-list">
                 <li>Navigation</li>
                 <li class="dark-nav"><a href="#fav-show">Favorite Show</a></li>
                 <li><a href="#fav-place">A Place I Enjoyed</a></li>
                 <li class="dark-nav"><a href="#fb-form">Feedback Form</a></li>
-                <li><a href="/schools.html" target="_blank">My Schools</a></li>
-                <li class="dark-nav"><a target="_blank" href="https://github.com/Tnatiel/IntroToWebdev/tree/assignment-2">This Project on GitHub</a></li>
+                <li><a href="/schools.html" target="_blank">My Schools <img class="ext-link-img" src="images/extrnal-link.svg" alt="external-link-img"></a></li>
+                <li class="dark-nav"><a target="_blank" href="https://github.com/Tnatiel/IntroToWebdev/tree/assignment-2">This Project on GitHub <img class="ext-link-img" src="images/extrnal-link.svg" alt="external-link-img"></a></li>
                 
             </ul>
 
         </nav>
+
+        <!-- MAIN CONTENT -->
+
         <main class="main">
+
+            <!-- HEADER SECTION -->
 
             <section class="head-sec">
                 <h1>Hello!</h1>
@@ -51,28 +59,35 @@
                 <h1>🤣  🤯  🔥</h1>
             </section>
 
-            <section id="fav-show" class="show-sec">
-                <article class="naturo-art">
-                    <h1>My Favorite Show</h1>
-                    <h2>Naruto</h2>
-                    <p>Naruto Uzumaki, a mischievous adolescent ninja, 
-                        struggles as he searches for recognition and dreams of becoming the Hokage,
-                        the village's leader and strongest ninja.</p>
-                    
-                        <h4>Why i liked naruto</h4>
-                        <p>Because it's combine action, comedy, friendship, betrayal.
-                             There are many life lessons in this show,
-                             Also anime food looks delicious </p>
-                        <h4>Quote</h4>
-                        <p>“Justice comes from vengeance but that justice only breeds more vengeance”. Nagato Uzumaki</p>
-                </article>
+            <!-- SHOW SECTION -->
 
-                <aside class="naruto-aside">
-                    <img id="naruto-img" class="shadowed-img" src="images/naruto-img.jpg" alt="naruto-img"> <br>
-                    <a target="_blank" href="https://www.imdb.com/title/tt0988824/"><button class="btn">see on IMDb</button></a>
-                </aside>
+            <section id="fav-show">
+
+                <div class="show-div">
+                    <article class="naturo-art">
+                        <h1>My Favorite Show</h1>
+                        <h2>Naruto</h2>
+                        <p>Naruto Uzumaki, a mischievous adolescent ninja, 
+                            struggles as he searches for recognition and dreams of becoming the Hokage,
+                            the village's leader and strongest ninja.</p>
+                        
+                            <h4>Why i liked naruto</h4>
+                            <p>Because it's combine action, comedy, friendship, betrayal.
+                                 There are many life lessons in this show,
+                                 Also anime food looks delicious </p>
+                            <h4>Quote</h4>
+                            <p>“Justice comes from vengeance but that justice only breeds more vengeance”. Nagato Uzumaki</p>
+                    </article>
+    
+                    <aside class="naruto-aside">
+                        <img id="naruto-img" class="shadowed-img" src="images/naruto-img.jpg" alt="naruto-img"> <br>
+                        <a target="_blank" href="https://www.imdb.com/title/tt0988824/"><button class="btn">see on IMDb</button></a>
+                    </aside>
+                </div>
                 
             </section>
+
+            <!-- PLACE SECTION -->
 
             <section id="fav-place" class="place-sec">
                 <article class="place-art">
@@ -92,98 +107,130 @@
                     </div>
                     
 
-                    <div class="why-i-like">
+                    <div class="why-i-like-place">
                         <h2>Why I like this place</h2>
                         <p>Because of the clear water, the cliffs around and the beautiful sights</p>
                     </div>
                 </article>
 
                 <aside class="place-aside">
-                    <img class="p-sm-img" src="/images/cape-greco-imgs/boat.jpg" alt="boat-img">                
-                    <img class="p-sm-img" src="/images/cape-greco-imgs/bridge.jpg" alt="bridge-img">                   
-                    <img class="p-sm-img" src="/images/cape-greco-imgs/cave.jpg" alt="cave-img">                   
-                    <img class="p-sm-img" src="/images/cape-greco-imgs/hole.jpg" alt="hole-img">
-                    <img class="p-sm-img" src="/images/cape-greco-imgs/sm cliff.jpg" alt="sm-cliff-img">
-                    <img class="p-sm-img" src="/images/cape-greco-imgs/sunrise.jpg" alt="sunrise-img">
-                    <img class="p-sm-img" src="/images/cape-greco-imgs/tree.jpg" alt="tree-img">
+
+                    <ul>
+                        <li>
+                            <img class="p-sm-img first-last-img" src="/images/cape-greco-imgs/boat.jpg" alt="boat-img">
+                            <span class="large"><img class="lrg-img" src="images/cape-greco-imgs/boat.jpg" alt="boat-img"></span>
+                        </li>
+                        <li>
+                            <img class="p-sm-img" src="/images/cape-greco-imgs/bridge.jpg" alt="bridge-img">
+                            <span class="large"><img class="lrg-img" src="/images/cape-greco-imgs/bridge.jpg" alt="bridge-img"></span>
+                        </li>
+                        <li>
+                            <img class="p-sm-img" src="/images/cape-greco-imgs/cave.jpg" alt="cave-img">
+                            <span class="large"><img class="lrg-img" src="/images/cape-greco-imgs/cave.jpg" alt="cave-img"></span>
+                        </li>
+                        <li>
+                            <img class="p-sm-img" src="/images/cape-greco-imgs/hole.jpg" alt="hole-img">
+                            <span class="large"><img class="lrg-img" src="/images/cape-greco-imgs/hole.jpg" alt="hole-img"></span>
+                        </li>
+                        <li>
+                            <img class="p-sm-img" src="/images/cape-greco-imgs/sm cliff.jpg" alt="sm-cliff-img">
+                            <span class="large"><img class="lrg-img" src="/images/cape-greco-imgs/sm cliff.jpg" alt="sm-cliff-img"></span>
+                        </li>
+                        <li>
+                            <img class="p-sm-img" src="/images/cape-greco-imgs/sunrise.jpg" alt="sunrise-img">
+                            <span class="large"><img class="lrg-img" src="/images/cape-greco-imgs/sunrise.jpg" alt="sunrise-img"></span>
+                        </li>
+                        <li><img class="p-sm-img first-last-img" src="/images/cape-greco-imgs/tree.jpg" alt="tree-img">
+                            <span class="large"><img class="lrg-img" class="p-sm-img first-last-img" src="/images/cape-greco-imgs/tree.jpg" alt="tree-img"></span>
+                        </li>
+                    </ul>
+                    
+                                       
+                                       
                     
                     
-                </aside>
-            
+                    
+                    
+                    
+                </aside>    
             </section>
             
             <section id="fb-form" class="form-sec">
-                <form action="/" method="get">
-                <div class="header">
-                    <h1>Feedback Form</h1>
-                    <h2 class="sec-h2">i'd love to hear your honest thoughts!</h2>
-                </div>
-
-                <div class="p-details">
-                    <h4>Personal details</h4>
-                    <div class="name-email">
-                        <div class="form-item">
-                            <label for="name">Full name:</label>
-                            <input  class="txt-input" type="text" name="name" id="name" required >
-                        </div>
-                        <div class="form-item">
-                            <label for="email">Email:</label>
-                            <input type="email" name="email" id="email">
-                        </div>       
-                        <div class="form-item">
-                            <label for="phone">Phone number:</label>
-                            <input type="tel" name="phone-number" id="phone" required >
-                        </div>
-                        <div class="form-item form-item-date">
-                            <label for="date">Date of birth:</label>
-                            <input type="date" max="2050-01-01" min="1950-01-01">
+                
+                <form class="form-sec" action="/index.html#fb-form" method="get">
+                        <div class="form-div">
+                    <div class="header">
+                        <h1>Feedback Form</h1>
+                        <h2 class="sec-h2">i'd love to hear your honest thoughts!</h2>
                     </div>
-                </div>
-
-                <div class="feedback">
-                    <div class="rate-src">  
-                        <h4>Your feedback</h4>
-                        <div class="rate">
-                            <label for="rate">Rating:</label>
-                            <div class="rate-btns">
+    
+                    <div class="p-details">
+                        <h4>Personal details</h4>
+                        <div class="p-details-div">
+                            <div class="form-item">
+                                <label for="name">Full name:</label>
+                                <input  class="txt-input" type="text" name="name" id="name" required >
+                            </div>
+                            <div class="form-item">
+                                <label for="email">Email:</label>
+                                <input class="txt-input" type="email" name="email" id="email">
+                            </div>       
+                            <div class="form-item">
+                                <label for="phone">Phone number:</label>
+                                <input class="txt-input" type="tel" name="phone-number" id="phone" required >
+                            </div>
+                            <div class="form-item form-item-date">
+                                <label for="date">Date of birth:</label>
+                                <input class="txt-input" type="date" max="2050-01-01" min="1950-01-01">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="feedback">
+                        <div class="rate-src">  
+                            <h4>Your feedback</h4>
+                            <div class="rate">
+                                <label for="rate">Rating:</label>
+                                <div class="rate-btns">
+                                    
+                                    <input class="rd-input" type="radio" id="1" name="choice">
+                                    <input class="rd-input" type="radio" id="2" name="choice">
+                                    <input class="rd-input" type="radio" id="3" name="choice">
+                                    <input class="rd-input" type="radio" id="4" name="choice">
+                                    <input class="rd-input" type="radio" id="5" name="choice">
                                 
-                                <input class="rd-input" type="radio" id="1" name="1">
-                                <input class="rd-input" type="radio" id="2" name="2">
-                                <input class="rd-input" type="radio" id="3" name="3">
-                                <input class="rd-input" type="radio" id="4" name="4">
-                                <input class="rd-input" type="radio" id="5" name="5">
-                            
-                                <p>1</p>
-                                <p>2</p>
-                                <p>3</p>
-                                <p>4</p>
-                                <p>5</p>
-                                
+                                    <p> 1</p>
+                                    <p> 2</p>
+                                    <p> 3</p>
+                                    <p> 4</p>
+                                    <p> 5</p>
+                                    
+                                </div>
+                            </div>
+                            <div class="source">
+                                <label for="source">How did you find this website?</label> <br>
+                                <select name="source" id="source">
+                                    
+                                    <option value="">GitHub</option>
+                                    <option value="">Linkedin</option>
+                                    <option value="">Webdev</option>
+                                    <option value="">Google</option>
+                                    <option value="">Other</option>
+                                    
+                                </select>
                             </div>
                         </div>
-                        <div class="source">
-                            <label for="source">How did you find this website?</label> <br>
-                            <select name="source" id="source">
-                                
-                                <option value="">GitHub</option>
-                                <option value="">Linkedin</option>
-                                <option value="">Webdev</option>
-                                <option value="">Google</option>
-                                <option value="">Other</option>
-                                
-                            </select>
+                        <div class="msg">
+                            <label for="msg">Your message:</label>
+                            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
                         </div>
-                    </div>
-                    <div class="msg">
-                        <label for="msg">Your message</label>
-                        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-                    </div>
+                    </div> 
+                    <div class="submit-form">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>      
                 </div>
-            </div>
-                
-                
-                
-            </form>
+                    </form>
+            
             </section>
             
         </main>
@@ -192,8 +239,7 @@
                 <br>
             <a href="mailto:name@email.com">natiel.traore1@gmail.com</a>
             </p>
-        </footer>
-        
+        </footer>    
     </div>
     
 </body>

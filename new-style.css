@@ -1,4 +1,4 @@
-/**********************TAG SELECTORS***********************/
+/**********************BASIC SELECTORS***********************/
 * {
     padding: 0;
     border: 0;
@@ -14,7 +14,7 @@ a {
 
 body {
     background: rgb(147,255,192);
-    background: linear-gradient(90deg, rgba(147,255,192,1) 41%, rgba(227,255,138,1) 100%);
+    background: linear-gradient(90deg, rgba(147,255,192,1) 41, rgba(227,255,138,1) 100%);
     font-family: 'Playfair Display', serif;
 }
 
@@ -24,7 +24,7 @@ footer {
     display: flex;
     grid-row: -1/ -2;
     grid-column: 1/-1;
-    font-size: 18px;
+    font-size: 2.2vh;
     justify-content: center;
     line-height: 2;
 
@@ -45,47 +45,53 @@ nav {
     
 }
 
+section {
+    line-height: 2;
+    height: 76vh;
+    display: block;
+    margin: 11vh 0;
+    padding: 2.5vh 2vw;
+}
+
 ul {
     list-style: none;
 }
 
+/*****************************************************/
 
-section {
-    height: 75vh;
-    line-height: 2;
-    margin: 6vh 1vw 1vh 2.5vw;
+.d-body {
+    background: rgb(82,25,126);
+    background: linear-gradient(95deg, rgba(82,25,126,0.8914916308320203) 75%, rgba(37,32,80,0.8718837876947654) 81%);
+}
+.dm-nav {
+    background: rgb(14 49 86 / 55%);
+}
+
+.darker-nav {
+    background-color: rgb(25 0 61 / 24%);
+}
+
+.place-aside {
+    border-color: rgb(14 49 86 / 55%);
+}
+
+.p-details{
+    border-color: rgb(14 49 86 / 55%);
+}
+.feedback{
+    border-color: rgb(14 49 86 / 55%);
 }
 
 /**********************CLASS SELECTORS***********************/
 
-.btn {
-	box-shadow: 0px 1px 0px 0px #fff6af;
-	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
-	background-color:#ffec64;
-	border-radius:7px;
-	border:1px solid #ffaa22;
-	display:inline-block;
-	cursor:pointer;
-	color:#333333;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:8px 79px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffee66;
-}
-.btn:hover {
-	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
-	background-color:#ffab23;
-}
-.btn:active {
-	position:relative;
-	top:1px;
-}
 
 .dark-nav {
     background-color: rgba(144, 185, 41, 0.86);
 
+}
+
+.ext-link-img {
+    width: 1.5vw;
 }
 
 .logo {
@@ -135,70 +141,17 @@ section {
     
 }
 
-.naruto-aside {
-    align-self: center;
-    grid-column: -1/-2;
-    text-align: right;
-}
-
-.naruto-art {
-    grid-row: 1/2;
-    grid-column: 1/2;
-    display: inline;
-}
 
 .site {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows:1fr 7fr 1fr;
+    grid-template-rows:1fr 8fr 1fr;
     height: 100vh;
     width: 100vw;
+    padding: 0.5vh 0;
     
 }
 
-
-.place-art {
-    grid-column: 1/2;
-    display: grid;
-    grid-template-rows: 3fr 1fr;
-}
-
-.place-desc-sec{
-    grid-row: 1/-2;
-}
-
-
-.place-aside {
-    border: solid 4px;
-    border-color: rgba(185, 218, 100, 0.862);
-    margin-top: 6vh;
-    overflow-y: scroll;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.p-sm-img {
-    margin: 0.1vh 0;
-    
-
-}
-
-.p-sm-img:hover {
-    
-    visibility: visible;
-}
-
-.p-lrg-img {
-    visibility: hidden;
-    grid-row: 1/-2;
-    grid-column: 1/2;
-}
-.why-i-like-sec {
-    grid-row: 2/3;
-    grid-column: 1/2
-    
-}
 
 .user {
     align-self: center;
@@ -224,28 +177,148 @@ Four spaces gap: &emsp; */
     
 }
 
+
+
 /********************** SECTIONS ****************************/
 .head-sec {
     line-height: 3;
     text-align: center;
+    line-height: 3;
+    /* margin: 7vh 1vw 6vh 2.5vw; */
 }
 
-.show-sec {
+
+
+/**********************HADER SECTIONS ****************************/
+
+
+/**********************NARUTO SECTION ****************************/
+
+.btn {
+	box-shadow: 0 0.1vh 0 0 #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:1.2vh;
+	border:0.1vh solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:2vh;
+	font-weight:bold;
+	padding: 1vh 6.8vw;
+	text-decoration:none;
+	text-shadow:0 0.1vh 0 #ffee66;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.btn:active {
+	position:relative;
+	top:0.1vh;
+}
+
+.naruto-aside {
+    align-self: center;
+    grid-column: -1/-2;
+    text-align: right;
+}
+
+.naruto-art {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: inline;
+}
+
+.show-div {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column: 1/2;
     
+    
+}
+
+/**********************ID SELECTORS***********************/
+#naruto-img {
+    border-radius: 1vh;
+    height: 50vh;
+}
+
+
+/**********************PLACE SECTION ****************************/
+
+.place-art {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+.place-desc-sec{
+    grid-row: 1/-2;
+}
+
+
+.place-aside {
+    border: solid 0.5vh;
+    border-color: rgba(185, 218, 100, 0.862);
+    border-radius: 1vh;
+    margin-top: 6vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    height: 83%;
+
 }
 
 .place-sec {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    column-gap: 2vw;
+}
+
+aside.place-aside li {
+    height: 26.7vh;
+}
+
+li:hover .large {
+    /* position: initial; */
+    left: 21vw;
+    top: 13vh;
     
+  }
+
+.large {
+    position: absolute;
+    left: -3333rem;
+}
+
+.lrg-img {
+    width: 51vw;
 }
 
 
-/**********************FORM SECTIONS ****************************/
+.p-sm-img {
+    height: 26vh;
+    width: 22.5vw;
+}
 
+
+.why-i-like-place {
+    grid-row: 2/3;
+    grid-column: 1/2
+    
+}
+/**********************FORM SECTION ****************************/
+
+div.p-details {
+    padding: 1.5vh;
+    margin: 1.5vh 0;
+}
+
+div.feedback{
+    padding: 1.5vh;
+}
 div.feedback {
     margin: 2vh 0;
 }
@@ -253,12 +326,21 @@ div.feedback {
 div.rate-btns p { 
     display: inline;
     
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 
 .feedback {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border: solid 0.2vh;
+    border-color: rgba(144, 185, 41, 0.86);
+    height: fit-content;
+
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
 }
 
 .form-item {
@@ -272,18 +354,27 @@ div.rate-btns p {
     width: 11vw;
 }
 
-input {
-    border: solid 2px;
+.form-sec {
+    line-height: 1.5;
+    /* margin: 1vh 0 2vh 0; */
+}
+
+.txt-input {
+    border: solid 0.2vh;
     border-color: rgba(0, 0, 0, 0.329);
-    border-radius: 10px;
+    border-radius: 1.5vh;
     height: 3.5vh;
 }
 
+
 .msg {
+    display: flex;
+    gap: 2vw;
     grid-column: -1/-2;
+
 }
 
-.name-email {
+.p-details-div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2vw;
@@ -293,6 +384,9 @@ input {
     display: flex;
     flex-direction: column;
     gap: 1vh;
+    border: solid 0.2vh;
+    border-color: rgba(144, 185, 41, 0.86);
+
 }
 .phone-date {
     display: flex;
@@ -303,6 +397,14 @@ input {
 .values {
     display: flex;
     gap: 1vw;
+}
+
+textarea {
+    background-color: #87808054;
+    border-radius: 2vh;
+    padding: 1.5vh;
+    width: 65%;
+    height: 70%;
 }
 
 .rate {
@@ -318,19 +420,48 @@ input {
     grid-template-rows: 1fr 1fr;
 }
 
+.rate-src {
+    display: flex;
+    flex-direction: column;
+}
+
 .rd-input {
     width: 1vw;
 }
 
+
 select {
     width: 18.2vw;
-    border: solid 2px;
+    border: solid 0.2vh;
     border-color: rgba(0, 0, 0, 0.329);
     border-radius: 1.5vh;
     height: 3.5vh;
     
 }
 .source {
+    margin: 3vh 0;
+}
+
+.submit-form {
+    display: flex;
+    gap: 2vw;
+}
+
+.submit-form input {
+    border: solid 0.2vh;
+    border-color: rgba(0, 0, 0, 0.329);
+    border-radius: 1.5vh;
+    padding: 1vh 3vw 1vh 2vw;
+    text-indent: 1vw;
+}
+
+.submit-form input:hover {
+    background-color: rgba(103, 91, 91, 0.247);
+}
+
+.submit-form input:active {
+    position:relative;
+	top:0.1vh;      
 }
 
 div.rate label {
@@ -341,16 +472,74 @@ div.rate label {
 
 
 
-/**********************CONTAINED TAGS SELECTORS***********************/
+/**********************CONTAINED TAG SELECTORS***********************/
 
 nav > ul > li {
-    padding: 10px;
-    font-size: 2.6vh;
+    padding: 1.8vw;
+    font-size: 2.2vh;
     font-weight: 700;
 }
 
-.name-email input {
+.p-details-div input {
     width: 20vw;
     text-indent: 1vw;
 }
 
+
+/* ************************** MEDIAS **************************************/
+
+/* BIG SCREENS */
+@media screen and (width > 1400px) {
+    
+    section {
+        font-size: 2.5vh;
+        display: grid;
+        height: 85vh;
+        width: 80vw;
+        padding: 0.5vh 1vw;
+    }
+
+}
+
+/* PHONES */
+
+@media screen and (width < 481px) {
+    .site {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        line-height: 1.2;
+        height: 77vh;
+        display: block;
+        margin: 11vh 0;
+        padding: 2.5vh 2vw;
+    }
+
+    .main {
+        grid-row: 2/ auto;
+        grid-column: 2/3;
+        overflow-y: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    } 
+    .main::-webkit-scrollbar {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+    }
+    
+    nav > ul > li {
+        padding: 1.8vw;
+        font-size: 1.2vh;
+        font-weight: 400;
+    }
+
+    
+    h1 {
+        /* font-size: 100%; */
+    }
+}
