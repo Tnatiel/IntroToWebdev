@@ -183,7 +183,6 @@ Four spaces gap: &emsp; */
 .head-sec {
     line-height: 3;
     text-align: center;
-    line-height: 3;
     /* margin: 7vh 1vw 6vh 2.5vw; */
 }
 
@@ -251,7 +250,6 @@ Four spaces gap: &emsp; */
 .place-art {
     grid-column: 1/2;
     display: grid;
-    grid-template-rows: 3fr 1fr;
 }
 
 .place-desc-sec{
@@ -511,15 +509,31 @@ nav > ul > li {
 
     section {
         line-height: 1.2;
-        height: 77vh;
+        height: 84vh;
         display: block;
-        margin: 11vh 0;
+        margin: 10vh 0;
         padding: 2.5vh 2vw;
     }
 
+    .head-sec {
+        height: 55vh;
+        margin: 4vh 0;
+    }
+
+    .show-div {
+        display: initial;
+    }
+
+    .place-sec {
+        height: 70vh;
+    }
+
+    .form-sec {
+        line-height: 1.5;
+        margin: 1vh 0;
+    }
+
     .main {
-        grid-row: 2/ auto;
-        grid-column: 2/3;
         overflow-y: auto;
         -ms-overflow-style: none;
         scrollbar-width: none;
@@ -528,8 +542,13 @@ nav > ul > li {
         display: none;
     }
 
-    ul {
+    .nav-list {
         display: flex;
+    }
+
+    .img-ul {
+        display: flex;
+        flex-direction: column;
     }
     
     nav > ul > li {
@@ -542,9 +561,13 @@ nav > ul > li {
     h1 {
         /* font-size: 100%; */
     }
+
+    #naruto-img {
+        margin-top: 2vh;    
+    }
 }
 
-@media screen and (width < 789px) {
+/* @media screen and (width < 789px) {
     section {
         line-height: 1.3;
         height: 90vh;
@@ -560,4 +583,4 @@ nav > ul > li {
     h2 {
         font-size: 120%;
     }
-}
+} */
