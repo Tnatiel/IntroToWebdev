@@ -4,86 +4,243 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natiel Traore</title>
-    <link rel="icon" href="images/favicon.ico">
+    <title>The NT Zone</title>
+    <link rel="stylesheet" href="new-style.css">
+    <link rel="icon" href="images/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display&family=Secular+One&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    
-    <div class="nav-div">
-        <nav>
-            <ol>
-                <h1>About Me</h1>
-                <li><button class="btn"><a href="#fav-show">Favorite Show</a></button></li>
-                <li><button class="btn"><a href="#fav-food">Favorite Food</a></button></li>
-                <li><button class="btn"><a href="#fav-place">Favorite Place</a></button></li>
-                <li><button class="btn"><a target="_blank" href="schools.html">My Education</a></button></li>
-            </ol>
+    <div class="site">
+
+        <!-- SITE HEADER -->
+
+        <header class="main-header">
+            <a href="/index.html">
+            <table class="logo-table">
+                <tr>
+                    <td><img class="logo" src="images/logo.png" alt="logo"></td>
+                    <td><h1 id="main-heading">Ezil E'leel</h1></td>
+                </tr>
+            </table>
+        </a>
             
+            <img class="user" src="images/icons8-male-user-36.png" alt="user-profile">
+            
+        </header>
+         
+        <!-- NAV-BAR -->
+
+        <nav>
+            <ul class="nav-list">
+                <li>Navigation</li>
+                <li class="dark-nav"><a href="#fav-show">Favorite Show</a></li>
+                <li><a href="#fav-place">A Place I Enjoyed</a></li>
+                <li class="dark-nav"><a href="#fb-form">Feedback Form</a></li>
+                <li><a href="/schools.html" target="_blank">My Schools <img class="ext-link-img" src="images/extrnal-link.svg" alt="external-link-img"></a></li>
+                <li class="dark-nav"><a target="_blank" href="https://github.com/Tnatiel/IntroToWebdev/tree/assignment-2">This Project on GitHub <img class="ext-link-img" src="images/extrnal-link.svg" alt="external-link-img"></a></li>
+                
+            </ul>
+
         </nav>
+
+        <!-- MAIN CONTENT -->
+
+        <main class="main">
+
+            <!-- HEADER SECTION -->
+
+            <section class="head-sec">
+                <h1>Hello!</h1>
+                <h2>Welcome to my website.</h2>
+                <h3>My name is Natiel Traore I'm a student on the Webdev bootcamp</h3>
+                <h3>These are my three favorite emojis:</h3>
+                <h1>🤣  🤯  🔥</h1>
+            </section>
+
+            <!-- SHOW SECTION -->
+
+            <section id="fav-show">
+
+                <div class="show-div">
+                    <article class="naturo-art">
+                        <h1>My Favorite Show</h1>
+                        <h2>Naruto</h2>
+                        <p>Naruto Uzumaki, a mischievous adolescent ninja, 
+                            struggles as he searches for recognition and dreams of becoming the Hokage,
+                            the village's leader and strongest ninja.</p>
+                        
+                            <h4>Why i liked naruto</h4>
+                            <p>Because it's combine action, comedy, friendship, betrayal.
+                                 There are many life lessons in this show,
+                                 Also anime food looks delicious </p>
+                            <h4>Quote</h4>
+                            <p>“Justice comes from vengeance but that justice only breeds more vengeance”. Nagato Uzumaki</p>
+                    </article>
+    
+                    <aside class="naruto-aside">
+                        <img id="naruto-img" class="shadowed-img" src="images/naruto-img.jpg" alt="naruto-img"> <br>
+                        <a target="_blank" href="https://www.imdb.com/title/tt0988824/"><button class="btn">see on IMDb</button></a>
+                    </aside>
+                </div>
+                
+            </section>
+
+            <!-- PLACE SECTION -->
+
+            <section id="fav-place" class="place-sec">
+                <article class="place-art">
+
+                    
+                        <h1>A place I Enjoyed visiting</h1>
+                        <h2 class="sec-h2">Cape Greco, Cyprus</h2>
+                        <p>Cape Greco is cape and also a small peninsula in the southeast of Cyprus, in Famagusta, between Ayia Napa and Paralimni.
+                             According to the findings of the excavations that took place in 1992, this site is considered to be one of the most ancient settlements on the island
+                        </p>
+                        
+                        <p>
+                            In the sea area of Cape Greco there are submarine ravines and caves that are popular for diving. 
+                            Within sea ravines up to 10 meters high, there are sea caves, which are called "palaces".
+                            
+                        </p>
+                    
+                    
+
+                    
+                        <h2>Why I like this place</h2>
+                        <p>Because of the clear water, the cliffs around and the beautiful sights</p>
+                    
+                </article>
+
+                <aside class="place-aside">
+
+                    <ul class="img-ul">
+                        <li>
+                            <img class="p-sm-img first-last-img" src="/images/cape-greco-imgs/boat.jpg" alt="boat-img">
+                            <span class="large"><img class="lrg-img" src="images/cape-greco-imgs/boat.jpg" alt="boat-img"></span>
+                        </li>
+                        <li>
+                            <img class="p-sm-img" src="/images/cape-greco-imgs/bridge.jpg" alt="bridge-img">
+                            <span class="large"><img class="lrg-img" src="/images/cape-greco-imgs/bridge.jpg" alt="bridge-img"></span>
+                        </li>
+                        <li>
+                            <img class="p-sm-img" src="/images/cape-greco-imgs/cave.jpg" alt="cave-img">
+                            <span class="large"><img class="lrg-img" src="/images/cape-greco-imgs/cave.jpg" alt="cave-img"></span>
+                        </li>
+                        <li>
+                            <img class="p-sm-img" src="/images/cape-greco-imgs/hole.jpg" alt="hole-img">
+                            <span class="large"><img class="lrg-img" src="/images/cape-greco-imgs/hole.jpg" alt="hole-img"></span>
+                        </li>
+                        <li>
+                            <img class="p-sm-img" src="/images/cape-greco-imgs/sm cliff.jpg" alt="sm-cliff-img">
+                            <span class="large"><img class="lrg-img" src="/images/cape-greco-imgs/sm cliff.jpg" alt="sm-cliff-img"></span>
+                        </li>
+                        <li>
+                            <img class="p-sm-img" src="/images/cape-greco-imgs/sunrise.jpg" alt="sunrise-img">
+                            <span class="large"><img class="lrg-img" src="/images/cape-greco-imgs/sunrise.jpg" alt="sunrise-img"></span>
+                        </li>
+                        <li><img class="p-sm-img first-last-img" src="/images/cape-greco-imgs/tree.jpg" alt="tree-img">
+                            <span class="large"><img class="lrg-img" class="p-sm-img first-last-img" src="/images/cape-greco-imgs/tree.jpg" alt="tree-img"></span>
+                        </li>
+                    </ul>
+                    
+                                       
+                                       
+                    
+                    
+                    
+                    
+                    
+                </aside>    
+            </section>
+            
+            <section id="fb-form" class="form-sec">
+                
+                <form class="form-sec" action="/index.html#fb-form" method="get">
+                        <div class="form-div">
+                    <div class="header">
+                        <h1>Feedback Form</h1>
+                        <h2 class="sec-h2">i'd love to hear your honest thoughts!</h2>
+                    </div>
+    
+                    <div class="p-details">
+                        <h4>Personal details</h4>
+                        <div class="p-details-div">
+                            <div class="form-item">
+                                <label for="name">Full name:</label>
+                                <input  class="txt-input" type="text" name="name" id="name" required >
+                            </div>
+                            <div class="form-item">
+                                <label for="email">Email:</label>
+                                <input class="txt-input" type="email" name="email" id="email">
+                            </div>       
+                            <div class="form-item">
+                                <label for="phone">Phone number:</label>
+                                <input class="txt-input" type="tel" name="phone-number" id="phone" required >
+                            </div>
+                            <div class="form-item form-item-date">
+                                <label for="date">Date of birth:</label>
+                                <input class="txt-input" type="date" max="2050-01-01" min="1950-01-01">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="feedback">
+                        <div class="rate-src">  
+                            <h4>Your feedback</h4>
+                            <div class="rate">
+                                <label for="rate">Rating:</label>
+                                <div class="rate-btns">
+                                    
+                                    <input class="rd-input" type="radio" id="1" name="choice">
+                                    <input class="rd-input" type="radio" id="2" name="choice">
+                                    <input class="rd-input" type="radio" id="3" name="choice">
+                                    <input class="rd-input" type="radio" id="4" name="choice">
+                                    <input class="rd-input" type="radio" id="5" name="choice">
+                                
+                                    <p> 1</p>
+                                    <p> 2</p>
+                                    <p> 3</p>
+                                    <p> 4</p>
+                                    <p> 5</p>
+                                    
+                                </div>
+                            </div>
+                            <div class="source">
+                                <label for="source">How did you find this website?</label> <br>
+                                <select name="source" id="source">
+                                    
+                                    <option value="">GitHub</option>
+                                    <option value="">Linkedin</option>
+                                    <option value="">Webdev</option>
+                                    <option value="">Google</option>
+                                    <option value="">Other</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <div class="msg">
+                            <label for="msg">Your message:</label>
+                            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                        </div>
+                    </div> 
+                    <div class="submit-form">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>      
+                </div>
+                    </form>
+            
+            </section>
+            
+        </main>
+        <footer>
+            <p>&nbsp;&ensp;© 2022 Natiel Traore 
+                <br>
+            <a href="mailto:name@email.com">natiel.traore1@gmail.com</a>
+            </p>
+        </footer>    
     </div>
-
     
-    <hr>
-
-    <div class="naruto-container">
-        <div class="naruto-head">
-            <h2 id="fav-show"><u>Favorite Show</u></h2>
-            <h3>Naruto</h3> <br>
-            <img id="naruto-img" class="shadowed-img" src="images/naruto-img.jpg" alt="naruto-img"> <br>
-            <a target="_blank" href="https://www.imdb.com/title/tt0988824/"><img src="images/imdb-logo.png" alt="imdb-logo"></a><br>
-    
-        </div>
-        
-        <div class="naruto-data">
-            <h4>Description</h4>
-            <p>Naruto Uzumaki, a mischievous adolescent ninja, 
-                struggles as he searches for recognition and dreams of becoming the Hokage,
-                the village's leader and strongest ninja.</p>
-            <h4>Why i liked naruto</h4>
-            <p>Because it's combine action, comedy, friendship, betrayal and there are many life lessons in the show </p>
-            <h4>Quote</h4>
-            <p>“Justice comes from vengeance but that justice only breeds more vengeance”. Nagato Uzumaki</p>
-    
-        </div>
-    </div>
-    
-    <hr>
-
-    <div class="fav-place">
-        <h2 id="fav-place"><u>Favorite Place I Traveled</u></h2>
-    <h3>Cape Greco, Cyprus <a target="_blank" href="https://www.google.com/maps/d/u/0/viewer?mid=1zicyhxfkEjwfEU35HDsPCvjRDs0&hl=en_US&ll=34.975913387308545%2C34.012212999999996&z=13"><img src="images/g-maps.png" alt="Google maps logo"></a></h3>
-    
-    <p>It's a bay in Cyprus, a natural harbor that has amazing views.</p>
-    <p>I liked visiting there because of the clear water, the cliffs around and the beautiful sights</p>
-    <table>
-        <tr>
-            <td><img class="shadowed-img" src="images/cape-greco1.jpeg" alt=""></td>
-            <td><img class="shadowed-img" src="images/cape-greco2.jpg" alt=""></td>
-        </tr>
-    </table>
-    
-    </div>
-    
-    <hr>
-    
-    <div>
-        <h2 id="fav-food"><u>Favorite Food</u></h2>
-        <ul>
-            <li>Sushi</li>
-            <li>Hamburger</li>
-            <li>Pizza</li>
-            <li>Steak</li>
-        </ul>
-
-    </div>
-    
-    <hr>
-
 </body>
-</html></html>
+</html>
